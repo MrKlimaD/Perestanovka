@@ -1,0 +1,32 @@
+﻿<Window x:Class="Perestanovka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Perestanovka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="441.201" Width="680.587">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF4ED7FF" Offset="0"/>
+                <GradientStop Color="#FF666DFF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="label" Content="Лабараторная работа №3" HorizontalAlignment="Left" Margin="175,72,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="label1" Content="Шифры перестановки" HorizontalAlignment="Left" Margin="96,21,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Monotype Corsiva"/>
+        <StackPanel HorizontalAlignment="Left" Height="256" VerticalAlignment="Top" Width="431" Margin="96,144,0,0">
+            <Button x:Name="SimpleS" Content="Одинарная перестановка" VerticalAlignment="Top" Click="SimpleS_Click" Height="34" FontSize="22" FontFamily="Monotype Corsiva" HorizontalAlignment="Left" Width="411" Background="#FF50CFFF"/>
+            <Button x:Name="BlockS" Content="Блочная перестановка" HorizontalAlignment="Left" VerticalAlignment="Top" Width="411" Click="BlockS_Click" Height="34" FontSize="22" FontFamily="Monotype Corsiva" Background="#FF50CFFF"/>
+            <Button x:Name="TableS" Content="Маршрутная перестановка" HorizontalAlignment="Left" VerticalAlignment="Top" Width="411" Click="TableS_Click" Height="33" FontSize="22" FontFamily="Monotype Corsiva" Background="#FF50CFFF"/>
+            <Button x:Name="VerticalS" Content="Вертикальная перестановка" HorizontalAlignment="Left" VerticalAlignment="Top" Width="411" Click="VerticalS_Click" Height="34" FontSize="22" FontFamily="Monotype Corsiva" Background="#FF50CFFF"/>
+            <Button x:Name="RotateS" Content="Поворотная решетка" HorizontalAlignment="Left" VerticalAlignment="Top" Width="411" Click="RotateS_Click" Height="34" FontSize="22" FontFamily="Monotype Corsiva" Background="#FF50CFFF"/>
+            <Button x:Name="MagicalS" Content="Магический квадрат" HorizontalAlignment="Left" VerticalAlignment="Top" Width="411" Click="MagicalS_Click" Height="34" FontSize="22" FontFamily="Monotype Corsiva" Background="#FF50CFFF"/>
+            <Button x:Name="DoubleS" Content="Двойная перестановка" HorizontalAlignment="Left" VerticalAlignment="Top" Width="411" Height="34" FontSize="22" FontFamily="Monotype Corsiva" Background="#FF50CFFF" Click="DoubleS_Click"/>
+        </StackPanel>
+        <Label x:Name="label2" Content="Выполнили:" HorizontalAlignment="Left" Margin="532,310,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Климентьев Денис" HorizontalAlignment="Left" Margin="532,330,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3_Copy" Content="Сенашов Егор" HorizontalAlignment="Left" Margin="532,350,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Help" Content="?" HorizontalAlignment="Left" Margin="620,34,0,0" VerticalAlignment="Top" Width="30" Height="30" FontSize="22" FontFamily="Monotype Corsiva" Background="#FFB4E5F7"/>
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="Perestanovka.TableWPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Perestanovka"
+        mc:Ignorable="d"
+        Title="TableWPF" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="Введите исходное слово:" HorizontalAlignment="Left" Margin="100,130,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="Text" HorizontalAlignment="Left" Height="31" Margin="355,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="314" FontSize="20"/>
+        <Label x:Name="label_Copy" Content="Введите длину:" HorizontalAlignment="Left" Margin="100,158,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="Count" HorizontalAlignment="Left" Height="23" Margin="264,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" FontSize="20"/>
+        <Label x:Name="Value" Content="" HorizontalAlignment="Left" Margin="100,304,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Button x:Name="Start" Content="Зашифровать" HorizontalAlignment="Left" Margin="503,225,0,0" VerticalAlignment="Top" Width="166" Click="Start_Click" FontSize="20"/>
+        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="191" Margin="93,189,0,0">
+            <RadioButton x:Name="LR" Content="Слева-направо" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" Checked="LR_Checked" IsChecked="True" FontSize="20"/>
+            <RadioButton x:Name="RL" Content="Cправа-налево" HorizontalAlignment="Left" Margin="12,35,0,0" VerticalAlignment="Top" IsChecked="True" Checked="RL_Checked" FontSize="20"/>
+        </Grid>
+        <RadioButton x:Name="UD" Content="Сверху-вниз" HorizontalAlignment="Left" Margin="289,200,0,0" VerticalAlignment="Top" IsChecked="True" Checked="UD_Checked" FontSize="20"/>
+        <RadioButton x:Name="DU" Content="Снизу-вверх" HorizontalAlignment="Left" Margin="289,230,0,0" VerticalAlignment="Top" Checked="DU_Checked" FontSize="20"/>
+        <Label x:Name="label1" Content="Шифр маршрутной перестановки" HorizontalAlignment="Left" Margin="93,21,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Monotype Corsiva"/>
+        <Button x:Name="button" Content="Назад" HorizontalAlignment="Left" Margin="686,377,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+
+    </Grid>
+</Window>
